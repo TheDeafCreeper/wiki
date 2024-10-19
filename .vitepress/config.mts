@@ -146,5 +146,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Aelysium-Group' },
       { icon: 'discord', link: 'https://join.aelysium.group/' }
     ]
+  },
+  enhanceApp({ app }) {
+    app.component('ToggleComponent', ContentToggle);
   }
 })
